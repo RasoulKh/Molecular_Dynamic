@@ -1,0 +1,88 @@
+Init Mode    R
+Sam_Init Mode    I
+Number of Atoms:   12052
+Memory Increase Factor   1.5
+Number of Atom Type:   3
+Number of Bonds:   0
+Number of Bond Type:   0
+Number of Angles:   0
+Number of Angle Type:   0
+Number of Dihedrals:   0
+Number of Dihedral Type:   0
+Number of Thrust Settings   0
+Number of Velocity Settings:   0
+Number of Temprature Settings:   2
+Number of Flux Settings:   0
+Number of Force Settings:   0
+Number of Solid_Body Settings:   0
+Atom Types Charactristics
+n	Name	Epsilon		Sigma		Mass   charge 
+1	A  0.0001198     3.4     40	  0
+2	A  0.0001198     3     40   0
+3	A  0.0001198     3     40    0
+Bond Types Charactristics
+n	Name	K		R0
+Angle Types Charactristics
+n	Name	K		Theta0
+Dihedral Types Charactristics
+n	Name	K		sign   multiplicity
+Simulation Settings
+DeltaT	   1
+MAX_Steps  1000000000
+Trajectory_Write_Step 200
+Properties_Write_Step 100
+Restart_Write_Step 10000
+Reduced Cut Dist    2.5
+Reduced Add. Dist    0.5
+R_Cut_Coul   20
+Simulation Box 
+X_Low 	-125
+X_High	125
+Y_Low 	-50
+Y_High	50
+Z_Low 	-15
+Z_High	15
+Measurment Box 
+X_Low 	-125
+X_High	125
+Y_Low 	-25
+Y_High	25
+Z_Low 	-15
+Z_High	15
+Sampling_Division 
+Nx		Ny	Nz
+68      13      1
+Sampling_Settings
+Sampling_Step      10
+Sampling_start    100000
+Display Scale     1
+Boundary Coundition
+x    f
+y    p
+z    p
+Thrust Sets
+Atom_NO	Force	Atom_No._Direction1    Atom_No._Direction2
+Velocity Sets
+Atom_type	X	Y	Z
+Temperature Sets 
+Atom_type	X	Y	Z	T       K
+3    0	0	 0	100   0.0221
+2    0 	0	 0	100    0.0221
+Flux Sets 
+Atom_type	X	Y	Z	F       K
+External Forces 
+ Atom_type	Direction	Magnitude
+Solid_Body Sets
+Atom_type	Vx		Vy	 Vz 	fx   fy 	fz    si
+thermostate
+Target   Tot_Thermo    	Coupling
+100	       N         1000 
+Flow Settings
+Number of Inlets 1
+Atom_Type	Velx	Vely 	Velz	Temp	Rho   x1    x2 		y1		y2		z1		z2
+1			0.0005		0		0	 100	0.8		-125   -115   -25    25      -15      15
+Number of Outlets 0
+dir     x1     x2		y1		y2		z1		z2
+Parallel
+N_x			N_y		N_z
+2			1		1
